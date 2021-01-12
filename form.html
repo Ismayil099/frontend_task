@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="form.css">
+    <script src="app.js"></script>
+    <title>Buy a ticket</title>
+</head>
+
+    <body>
+        <div class="container">
+            <div class="message signup">
+                <div class="btn-wrapper">
+                    <button onclick="location.href='index.html'" class="button">Home</button>
+                    <button onclick="location.href='about.html'" class="button">About me</button>
+                </div>
+            </div>
+            <div class="form">
+                <div class="form-header">Buy a ticket by filling this form!</div>
+                <form name="ticket_form" action="thank_you.html">
+                    <input class="input" type="text" placeholder="Full name" name="full_name">
+                    <span id="full_name_error" class="error">Please, enter your full name</span>
+                    <input class="input" type="email" placeholder="Email" name="email">
+                    <span id="email_error" class="error">Please, enter your email</span>
+                    <select class="input" name="section" id="">
+                        <option value="">Choose a section</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                    <span id="section_error" class="error">Please, choose a section</span>
+                    <select class="input" name="seat">
+                        <option value="">Choose a seat</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                    <span id="seat_error" class="error">Please, choose a seat</span>
+                    <textarea class="input" placeholder="Additional notes"></textarea>
+                    <button class="button">Submit</button>
+                </form>
+            </div>
+        </div>
+    </body>
+
+</html>
